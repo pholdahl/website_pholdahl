@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--main-bluegray);
+}
+
 h1,
 h2 {
     font-family: var(--headline-fonts);
@@ -285,6 +289,8 @@ a {
 
 /* Media query */
 
+/* Ipad */
+
 @media (max-width: 1024px) {
     h1, 
     h2 {
@@ -338,6 +344,8 @@ a {
 
 }
 
+/* IphoneX */
+
 @media (max-width: 375px) {
     h1, 
     h2 {
@@ -358,11 +366,11 @@ a {
 
     p,
     .line-2 {
-        font-size: 70%;
+        font-size: 100%;
     }
 
     .nav-list a {
-        font-size: 70%;
+        font-size: 80%;
         padding: 10px;
     }
 
@@ -413,7 +421,7 @@ a {
         max-width: auto;
         text-align: center;
         margin: 30px;
-        padding: 0 0 10px 0;
+        padding: 20px 0 10px 0;
     }
 
     .contact-section {
@@ -422,12 +430,12 @@ a {
     }
 
     .contact-section a {
-        font-size: 15px;
+        font-size: 20px;
         padding: 20px 0 20px 0;
     }
 
     .contact-section p {
-        padding-bottom: 150px;
+        padding-bottom: 110px;
     }
 
     .footer-section p {
@@ -437,7 +445,9 @@ a {
 
 }
 
-@media (max-width: 320px) {
+/* Iphone 6/7/8 */
+
+@media (max-width: 375px) and (max-height: 667px) {
     h1, 
     h2 {
         font-size: 130%;
@@ -457,32 +467,32 @@ a {
 
     p,
     .line-2 {
-        font-size: 70%;
+        font-size: 100%;
     }
 
     .nav-list a {
-        font-size: 70%;
+        font-size: 80%;
         padding: 10px;
     }
 
     .welcome-section{
-        height: 812px;
+        height: 667px;
     }
 
     .projects-section,
     .contact-section {
         height: var(--height-auto);
-        padding-top: 60px;
+        padding-top: 10px;
     }
     
     .projects-section h2 {
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         max-width: 360px;
-        grid-gap: 10px;
+        grid-gap: 5px;
     }
 
     .project-title {
@@ -490,14 +500,14 @@ a {
         padding: 2px;
     }
     .projects-end a img {
-        max-width: 60px;
+        max-width: 40px;
         padding-top: 0px;
-        padding-bottom: 60px;
+        padding: 0 15px 10px 15px;
 
     }
 
     .projects-end p {
-        padding: 20px 0 10px 0;
+        padding: 0px 0 5px 0;
     }
 
     #contact-headline {
@@ -512,21 +522,123 @@ a {
         max-width: auto;
         text-align: center;
         margin: 30px;
-        padding: 0 0 10px 0;
+        padding: 20px 0 10px 0;
     }
 
     .contact-section {
+        padding-top: 10px;
+    
+    }
+
+    .contact-section a {
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+
+    .contact-section p {
+        padding-bottom: 110px;
+    }
+
+    .footer-section p {
+        font-size: 8px;
+        padding: 20px 0 20px 0;
+    }
+
+}
+
+/* Iphone5 */
+
+@media (max-width: 320px) {
+
+    h1, 
+    h2 {
+        font-size: 113%;
+    }
+
+    .projects-section h2 {
+        display: inline-block;
+        max-width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0 20px 0;
+    }
+
+    .line-1 {
+        font-size: 130%;
+    }
+
+    p,
+    .line-2 {
+        font-size: 70%;
+    }
+
+    .nav-list a {
+        font-size: 80%;
+        padding: 10px;
+    }
+
+    .welcome-section{
+        height: 568px;
+    }
+
+    .projects-section,
+    .contact-section {
+        height: var(--height-auto);
         padding-top: 30px;
+    }
+    
+    .projects-section h2 {
+        padding-top: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        max-width: 300px;
+        grid-gap: 5px;
+    }
+
+    .project-title {
+        font-weight: 300;
+        padding: 2px;
+    }
+    .projects-end a img {
+        max-width: 40px;
+        padding-top: 0px;
+        padding: 0 10px 10px 10px;
+
+    }
+
+    .projects-end p {
+        padding: 0px 0 0px 0;
+    }
+
+    #contact-headline {
+        visibility: hidden;
+        display: none;
+        padding: 0;
+    }
+
+    .hidden-text {
+        display: block;
+        visibility: visible;
+        max-width: auto;
+        text-align: center;
+        margin: 30px;
+        padding: 0 0 0px 0;
+    }
+
+    .contact-section {
+        padding-top: 0px;
     
     }
 
     .contact-section a {
         font-size: 15px;
-        padding: 20px 0 20px 0;
+        padding: 0px 0 20px 0;
     }
 
     .contact-section p {
-        padding-bottom: 150px;
+        padding-bottom: 60px;
     }
 
     .footer-section p {
