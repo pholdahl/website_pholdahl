@@ -346,7 +346,7 @@ a {
 
 /* IphoneX */
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     h1, 
     h2 {
         font-size: 130%;
@@ -443,7 +443,7 @@ a {
         padding: 20px 0 20px 0;
     }
 
-}
+} */
 
 /* Iphone 6/7/8 */
 
