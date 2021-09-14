@@ -550,7 +550,7 @@ a {
 
 /* Iphone5 */
 
-@media (max-width: 320px) {
+@media (max-width: 320px), (max-width: 375px){
 
     h1, 
     h2 {
@@ -631,7 +631,7 @@ a {
 
     .contact-section {
         height: 80vh;
-        padding-top: 10px;
+        padding-top: 15px;
         /* border: 1px solid red; */
     
     }
